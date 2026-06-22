@@ -80,13 +80,13 @@
         <div id="link_3" class="link_card">
           <span class="material-symbols-outlined">dentistry</span>
           <h3>Trauma-Informed Care</h3>
-          <p> Learn more about developing a trauma-informed continuum of dental healthcare</p>
+          <p> Learn more about developing a trauma-informed continuum of dental healthcare.</p>
           <span class="material-symbols-outlined" id="forward_arrow">keyboard_arrow_right</span>
         </div>
         <div id="link_4" class="link_card">
           <span class="material-symbols-outlined">auto_stories</span>
           <h3>Further Readings</h3>
-          <p>Browse our bibliography of research and other resources on mental health and oral health</p>
+          <p>Browse our bibliography of research and other resources on mental health and oral health.</p>
           <span class="material-symbols-outlined" id="forward_arrow">keyboard_arrow_right</span>
         </div>
       </div>
@@ -262,15 +262,20 @@
       copyrightText.innerHTML = copyright_year;
 
       const siteNav = document.getElementById('site_nav')
+      let isClicked = false;
       function checkWidth() {
-        if (window.innerWidth <= 1000) {
-            siteNav.innerHTML="<ul><li>. . .</li><li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li id='current'><di>Oral Health Collaborative</di></li></ul>"
+        if (window.innerWidth <= 1000 && !isClicked) {
+            siteNav.innerHTML="<ul><li id='hidden_content' onClick='changeText()'><a href='#'>. . .</a></li><li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li id='current'><di>Oral Health Collaborative</di></li></ul>"
         } else {
            siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li id='current'><di>Oral Health Collaborative</di></li></ul>";
         }
       }
       window.addEventListener("resize", checkWidth);
       checkWidth();
+      function changeText(){
+        isClicked = true;
+        siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li id='current'><di>Oral Health Collaborative</di></li></ul>";
+      }
     </script>
 </body>
 </html>
