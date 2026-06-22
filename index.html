@@ -28,25 +28,26 @@
           <li><a href="https://www.uofmhealth.org/" style="text-decoration: underline;">Home</a> </li>
           <li><a href="https://medresearch.umich.edu/labs-departments" style="text-decoration: underline;">Labs & Departments</a> </li>
           <li><a href="https://medresearch.umich.edu/labs-departments/labs" style="text-decoration: underline;">Labs</a> </li>
-          <li id="current"><di>Trauma-Informed Dental Care</di></li>
+          <li id="current"><di>Oral Health Collaborative</di></li>
         </ul>
        </nav>
       </div>
       <div id="title_hero">
         <div id="title_text">
-          <h1 class="page_title">Trauma Informed Dental Care Study</h1>
-          <P class="title_description">A collaborative research project investigating the link between trauma and oral care and ways to make visits to the dentist more comfortable for
-            individuals with such trauma.
+          <h1 class="page_title">The Oral Health Recovery Collaborative</h1>
+          <P class="title_description">An interprofessional, community-engaged working group exploring the interconnectedness of mental health and oral health, and the benefits of integrating mental and oral healthcare systems.
           </P>
         </div>
         <img class="hero_image" src="images/hero_image_2.jpg" alt="Dentist talks with patient">
       </div>
       <div id="project_info">
-        <h2 id="info_title">A Mixed Methods Approach to Improving Dental Care</h2>
-        <p id="info_description">This research project was carried out by an interdisciplinary study team consisting of psychiatrists, dentists, and other healthcare professionals. 
-          It's goal was to explore the link between psychological trauma, such as childhood abuse or sexual assualt, and dental care challenges. The research team collaborated in designing 
-          and conducting surveys and interviews of dental providers and individuals with lived experiences. Through this process data was collected on how psychological trauma can cause an aversion to dental care and how providers can be mindful of this trauma when 
-          when delivering care. The following were the key lines of inquiry that guided this study: 
+        <h2 id="info_title">Why Mental Health and Oral Health?</h2>
+        <p class="info_description">In the words of Dr. Steve Kisley, there is "no mental health without oral health." [1]Compared to the general population, people with serious mental illness are 40% more likely to have lost 
+          some teeth [2] and are two to four times more likely to have periodontal diseases [3]. Oral health problems are associated with chronic pain, sleep problems, work problems, worsening diet, shame, and stigma [4], 
+          all of which impact psychological wellbeing. Integrated whole-person care, and a deeper understanding of the interconnectedness of mental health and oral health, are therefore essential to improving the quality of life of people with mental health diagnoses. 
+        </p>
+        <p class="info_description">
+          The following lines of inquiry guided the study group:
         </p>
         <ul id="project_inquiries">
           <li>What do dental providers and trauma survivors describe as their experience providing/receiving 
@@ -66,32 +67,26 @@
         <h2 id="links_title">Explore Project Information and Resources</h2>
         <div id="link_1" class="link_card">
           <span class="material-symbols-outlined"> diversity_3</span>
-          <h3>Study Team</h3>
-          <p>Get to know the team of healthcare and technical professionals that developed this toolkit.</p>
+          <h3>Project Team</h3>
+          <p>Get to know our team.</p>
           <span class="material-symbols-outlined" id="forward_arrow">keyboard_arrow_right</span>
         </div>
         <div id="link_2" class="link_card">
           <span class="material-symbols-outlined">biotech</span>
-          <h3>Research Findings</h3>
+          <h3>Our Projects</h3>
           <p>Read our team's research findings on trauma informed care within the context of dentistry.</p>
           <span class="material-symbols-outlined" id="forward_arrow">keyboard_arrow_right</span>
         </div>
         <div id="link_3" class="link_card">
-          <span class="material-symbols-outlined">clinical_notes</span>
-          <h3>Provider Resources</h3>
-          <p>Review the guides and tools that our team developed for dental care providers to utilize when treating patients with trauma.</p>
+          <span class="material-symbols-outlined">dentistry</span>
+          <h3>Trauma-Informed Care</h3>
+          <p> Learn more about developing a trauma-informed continuum of dental healthcare</p>
           <span class="material-symbols-outlined" id="forward_arrow">keyboard_arrow_right</span>
         </div>
         <div id="link_4" class="link_card">
-          <span class="material-symbols-outlined">dentistry</span>
-          <h3>Patient Resources</h3>
-          <p>Learn about the resources that our team developed for patients with trauma when receiving dental care.</p>
-          <span class="material-symbols-outlined" id="forward_arrow">keyboard_arrow_right</span>
-        </div>
-        <div id="link_5" class="link_card">
           <span class="material-symbols-outlined">auto_stories</span>
           <h3>Further Readings</h3>
-          <p>Explore articles and papers that are relevant to this study and toolkit.</p>
+          <p>Browse our bibliography of research and other resources on mental health and oral health</p>
           <span class="material-symbols-outlined" id="forward_arrow">keyboard_arrow_right</span>
         </div>
       </div>
@@ -265,6 +260,17 @@
       })
       const copyright_year = `© Copyright 1995-${Date().slice(11,15)} Regents of the University of Michigan`;
       copyrightText.innerHTML = copyright_year;
+
+      const siteNav = document.getElementById('site_nav')
+      function checkWidth() {
+        if (window.innerWidth <= 1000) {
+            siteNav.innerHTML="<ul><li>. . .</li><li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li id='current'><di>Oral Health Collaborative</di></li></ul>"
+        } else {
+           siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li id='current'><di>Oral Health Collaborative</di></li></ul>";
+        }
+      }
+      window.addEventListener("resize", checkWidth);
+      checkWidth();
     </script>
 </body>
 </html>

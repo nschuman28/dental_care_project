@@ -31,6 +31,7 @@ li:focus{
    outline-style: solid;
    outline-width: 2.66667px;
 }
+
 #accessibility_link a,
 #communication_link a,
 #disclaimer_link a,
@@ -39,7 +40,8 @@ li:focus{
 #discrimination_link a,
 #department_link a,
 #health_link a,
-#finance_link a {
+#finance_link a,
+#harrassment_link a{ 
     display: inline-block;
     text-decoration: none;
 }
@@ -134,7 +136,7 @@ li:focus{
 #info_title{
     font-size: 45px;
 }
-#info_description{
+.info_description{
    padding-top: 20px;
    font-size: 20px; 
    line-height: 33px; 
@@ -144,6 +146,7 @@ li:focus{
    font-size: 20px; 
    line-height: 33px; 
    padding-left: 50px; 
+   list-style-type: none;
 }
 #project_inquiries li{
     color: #131516;
@@ -154,16 +157,12 @@ li:focus{
 #project_inquiries li:last-child{
     padding-bottom: 75px;
 }
-#project_inquiries li::marker{
-    color: #2f65a7;
-    font-size: 25px; 
-    
-}
+
 #project_links{
     background-color: #eaf2f4;
     display: grid;
-    grid-template-columns: .5fr .5fr .5fr .5fr .25fr .5fr .5fr .5fr .25fr .5fr .5fr .5fr .5fr;
-    grid-template-rows: min-content .5fr .5fr .10fr;
+    grid-template-columns: .5fr .5fr .5fr .5fr .25fr .5fr .5fr .5fr .25fr .5fr .5fr .5fr .25fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: min-content min-content .10fr;
     row-gap: 25px;
 }
 #links_title{
@@ -176,7 +175,7 @@ li:focus{
     background-color: white;
     text-align: left;
     color: #00274C;
-    padding: 55px; 
+    padding: 40px; 
     transition: 0.5s;
     position: relative;
 }
@@ -202,11 +201,9 @@ li:focus{
     grid-column: 10/ span 3;
 }
 #link_4{
-    grid-column: 2/span 3;
+    grid-column: 14/span 3;
 }
-#link_5{
-    grid-column: 6/ span 3;
-}
+
 
 .link_card .material-symbols-outlined {
   font-variation-settings:
@@ -621,23 +618,19 @@ footer a:hover{
     }
     #link_1{
       grid-row: 2;
-      grid-column: 2/13;
+      grid-column: 2/17;
     }
     #link_2{
       grid-row:3;
-      grid-column: 2/13;
+      grid-column: 2/17;
     }
     #link_3{
       grid-row:4;
-      grid-column: 2/13;
+      grid-column: 2/17;
     }
     #link_4{
       grid-row:5;
-      grid-column: 2/13;
-    }
-    #link_5{
-      grid-row:6;
-      grid-column: 2/13;
+      grid-column: 2/17;
     }
     footer{
         grid-template-rows: repeat(17, min-content);
@@ -773,7 +766,7 @@ footer a:hover{
         font-size: 16px;
         line-height: 22px;
     }
-    #info_description{
+    .info_description{
        font-size:16px;
        line-height: 22px;
     }
@@ -787,6 +780,17 @@ footer a:hover{
         line-height: 24px;
 
     }
+    #project_info{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #project_inquiries li{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #project_inquiries li:last-child{
+    padding-bottom: 25px;
+}
     footer{
         grid-template-rows: repeat(19, min-content);
     }
@@ -825,7 +829,6 @@ footer a:hover{
      #harrassment_link{
         grid-row: 9;
     }
-    
     #accessibility_link{
         grid-row: 10;
     }
