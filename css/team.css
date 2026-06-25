@@ -17,11 +17,12 @@
    grid-template-columns: repeat(3,1fr);
    grid-template-rows: min-content min-content;
    margin-top: 25px;
+   margin-bottom: 25px;
 }
 #investigator_img{
     border-radius: 50%;
-    height: 90%;
-    width:80%;
+    height: 93%;
+    width:70%;
     grid-column: 1;
     grid-row: 1/span 2;
 }
@@ -51,4 +52,47 @@
 #investigator_position{
     font-size: 18px;
     margin-top: -1px;
+}
+#team_title{
+    grid-column: 4/-1;
+    grid-row: 3;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+#team_section{
+    grid-row:4;
+    grid-column: 4/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,min-content);
+}
+.team_member{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+#co_investigator{
+    grid-column: 1;
+    grid-row: 1;
+}
+.member_img{
+    border-radius: 50%;
+    height: 38%;
+    width:100%;
+    grid-column: 1;
+}
+.member_info{
+    grid-column: 2;
+}
+.member_info h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.member_info p{
+    font-size: 18px;
+    line-height: 27px;
+}
+#research_prof{
+    grid-column: 2;
+    grid-row: 1;
 }
