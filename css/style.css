@@ -561,6 +561,13 @@ footer a:hover{
     margin-top: -10px;
 
 }
+#hidden_content{
+    color:rgb(1, 116, 188);
+}
+#hidden_content:hover{
+     color:#00274C;
+     cursor: pointer;
+}
 @media only screen and (max-width:1000px){
     #title_hero{
     display: grid;

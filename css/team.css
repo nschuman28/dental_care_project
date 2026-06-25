@@ -1,0 +1,54 @@
+#team_info{
+    display:grid;
+    grid-template-columns: repeat(10, .5fr);
+    grid-template-rows: repeat(6, min-content);
+    margin:25;
+}
+#investigator_title{
+    grid-column: 4/-1;
+    font-size: 36px;
+    grid-row:1;
+    margin-bottom: 25px;
+}
+#investigator_section{
+   grid-row: 2;
+   grid-column: 4/-1;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: min-content min-content;
+   margin-top: 25px;
+}
+#investigator_img{
+    border-radius: 50%;
+    height: 90%;
+    width:80%;
+    grid-column: 1;
+    grid-row: 1/span 2;
+}
+#investigator_info{
+    grid-column: 2/-1;
+    margin-left: -40px;
+}
+#investigator_name{
+    color: #2f65a7;
+    font-size: 20px;
+    transition: .25s;
+}
+#investigator_section a{
+    text-decoration: none;
+}
+#investigator_name:hover{
+    color: #00274C;
+    text-decoration: underline;
+}
+#investigator_arrow{
+    vertical-align: middle;
+    margin-bottom: 5px;
+    font-size: 40px;
+    margin-left: -5px;
+    transition: .25s;
+}
+#investigator_position{
+    font-size: 18px;
+    margin-top: -1px;
+}
