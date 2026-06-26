@@ -92,6 +92,7 @@
     background-color: white;
     opacity: 90%;
     align-items: center;
+    overflow-wrap: normal;
 }
 #child_info h2{
     font-size: 36px;
@@ -102,4 +103,26 @@
     font-size: 20px;
     line-height: 30px;
 }
-
+@media only screen and (max-width:1000px){
+    .project_nav{
+        display: none;
+    }
+    #main_summary{
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+    }
+    #page_title{
+        font-size: 36px;
+    }
+    #child_info{
+        grid-column: 4/8;
+        grid-row: 5/6;
+        padding:25px;
+    }
+    #child_info h2{
+        font-size: 27px;
+    }
+    #child_info p{
+        font-size: 18px;
+    }
+}
