@@ -51,51 +51,32 @@
             <img id ="child_img" src="images/team.jpeg" alt="team builidng puzzle"  style="width:100%"/>
         </div>
       </div>
-      <div id="team_info">
-        <h2 id="investigator_title">Principle Investigator</h2>
-        <div id="investigator_section">
-            <img id="investigator_img" src="https://medschool.umich.edu/sites/default/files/styles/square_1_1/public/2025-12/adrienne_lapidos.jpg.webp?h=d94c4b90&itok=dY8ZvMzp" alt="Image of Dr. Lapidos"/>
-            <div id="investigator_info">
-                <a href="https://medschool.umich.edu/profile/1840/adrienne-lapidos?pk_vid=7eacbe9358148d3c1782350360df3d0a"><h3 id="investigator_name">Adrienne Lapidos, PhD, ABPP<span class="material-symbols-outlined" id="investigator_arrow">keyboard_arrow_right</span></h3></a>
-                <p id="investigator_position">Clinical Associate Professor of Psychiatry, Medical School</p>
-            </div>
+      <div id="main_content">
+        <h1 id="content_title">Current and Past Oral Health Recovery Working Group Investigators</h1>
+        <div class="member_info" id="lapidos_info">
+          <h2>Adrien Lapidos, PhD, ABPP</h2>
+          <p>Clinical Associate Professor</p>
+          <p>Department of Psychiatry</p>
+          <p>University of Michigan Medical School</p>
         </div>
-        <h2 id ="team_title">Team Members</h2>
-        <div id="team_section">
-            <div class="team_member" id="co_investigator">
-                <img class="member_img" src="https://www.dentistry.osu.edu/sites/default/files/styles/square_1x1/public/2024-08/DanielleRulli400.jpg?h=a7e6d17b&itok=QKp4TEAr" alt="Image of Dr. Rulli">
-                 <div class="member_info">
-                  <h3 class="member_title">Danielle Rulli, DHSc, MS, RDH</h3>
-                  <p class="member_position">Co-Investigator</p>
-                  <p class="member_bio">Dr. Rulli is a Clincal Associate Professor at the Ohio State School of Dentistry. 
-                    She is also the Graduate Program  Director of OSU's Dental Hygiene program and has published 40 papers. 
-                    Dr. Rulli has received the University of Michigan’s prestigious Provost’s Teaching Innovation Prize, and was a University of Michigan Interprofessional Leaders Fellow.
-                  </p>
-                 </div>
-            </div>
-            <div class="team_member" id="research_prof">
-                <img class="member_img" src="https://medschool.umich.edu/sites/default/files/styles/wide/public/2025-06/FamMed-Perez-Analay.jpg.webp?itok=AaM3eUDh" alt="Image of Dr. Perez">
-                 <div class="member_info">
-                  <h3 class="member_title">Analay Perez, PHD</h3>
-                  <p class="member_position">Research Assistant Professor</p>
-                  <p class="member_bio">Dr. Perez is a Research Assistant Professor at the Universirty of Michigan's School of Medicine
-                    specializing in Family Medicine. Her research focuses on advancing mixed methods research methodology and engaging community health 
-                    workers/promotoras in research to bridge researchers and communities. 
-                  </p>
-                 </div>
-            </div>
-            <div class="team_member" id="student_researcher">
-                <img class="member_img" src="images/Nathan Pic.png" alt="Image of Nathan Schuman">
-                 <div class="member_info">
-                  <h3 class="member_title">Nathan Schuman, BS</h3>
-                  <p class="member_position">Student Researcher</p>
-                  <p class="member_bio"> Nathan is a master's student enrolled in the University of Michigan School of Infomation. After completing his studies Nathan plans to pursue a career at the intersection of mental health 
-                    and technology by developing applications designed to assist those living with mental health conditions. For this project he 
-                    coded data and performed web and document design. 
-                  </p>
-                 </div>
-            </div>
+        <div class="member_info" id="rulli_info">
+          <h2>Danielle Rulli, DHSc, MS, RDH</h2>
+          <p>Associate Professor & Graduate Program Director, Dental Hygiene</p>
+          <p>College of Dentistry</p>
+          <p>The Ohio State University</p>
         </div>
+        <div class="member_info" id="cullen_info">
+          <h2>Jennifer Cullen, RDH, BSDH, MPH</h2>
+          <p>Clinical Assistant Professor & Director, Division of Dental Hygiene</p>
+          <p>University of Michigan School of Dentistry</p>
+        </div>
+        <div class="member_info" id="nalliah_info">
+          <h2>Romesh Nalliah, DDS, MHCM</h2>
+          <p>University of Michigan School of Dentistry</p>
+
+        </div>
+
+
       </div>
     </main>
     <footer>
@@ -188,14 +169,6 @@
       const homeNavLink = document.getElementById('home_nav_link');
       const homeNavText = document.getElementById('home_nav_text');
       const homeNavArrow = document.getElementById('home_arrow');
-      const investigatorArrow = document.getElementById('investigator_arrow');
-      const investigatorName = document.getElementById('investigator_name');
-      investigatorName.addEventListener('mouseenter',()=>{
-        investigatorArrow.style.paddingLeft="10px";
-      })
-      investigatorName.addEventListener('mouseleave',()=>{
-        investigatorArrow.style.paddingLeft="0px";
-      })
       homeNavLink.addEventListener('mouseenter',()=>{
         homeNavArrow.style.marginLeft="-10px";
         homeNavArrow.style.color="#131516"
