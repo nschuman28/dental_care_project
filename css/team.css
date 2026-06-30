@@ -14,21 +14,19 @@
    grid-row: 2;
    grid-column: 2/-1;
    display: grid;
-   grid-template-columns: repeat(3,1fr);
-   grid-template-rows: min-content min-content;
+   grid-template-columns: min-content 1fr;
+   grid-template-rows: min-content;
    margin-top: 25px;
    margin-bottom: 25px;
 }
 #investigator_img{
     border-radius: 50%;
-    height: 92%;
-    width:68%;
+    height: 250px;
+    width:250px;
     grid-column: 1;
-    grid-row: 1/span 2;
 }
 #investigator_info{
-    grid-column: 2/-1;
-    margin-left: -90px;
+    grid-column: 2;
 }
 #investigator_name{
     color: #2f65a7;
@@ -57,7 +55,7 @@
     grid-column: 2/-1;
     grid-row: 3;
     font-size: 36px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 #team_section{
     grid-row:4;
@@ -65,10 +63,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4,min-content);
+    column-gap: 15px;
+    row-gap: 30px;
 }
 .team_member{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: min-content 1fr;
     column-gap: 15px;
 }
 #co_investigator{
@@ -77,8 +77,8 @@
 }
 .member_img{
     border-radius: 50%;
-    height: 50%;
-    width:90%;
+    height: 250px;
+    width:250px;
     grid-column: 1;
 }
 .member_info{
@@ -95,4 +95,91 @@
 #research_prof{
     grid-column: 2;
     grid-row: 1;
+}
+#student_researcher{
+    grid-row: 2;
+    grid-column:1; 
+}
+@media only screen and (max-width:1000px){
+    #team_section{
+        row-gap: 60px;
+    }
+    #team_info{
+        margin-top: -50px;
+    }
+    #investigator_title{
+        font-size: 27px;
+    }
+    #investigator_name{
+        font-size: 18px;
+    }
+    #investigator_img{
+        height: 200px;
+        width: 200px; 
+    }
+    .team_member{
+        grid-template-columns: min-content 1fr;
+    }
+    .member_info{
+        grid-column: 2/-1;
+    }
+    #team_title{
+        font-size: 27px;
+    }
+    #co_investigator{
+        grid-column: 1/-1;
+    }
+    #research_prof{
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+    #student_researcher{
+        grid-row:3;
+        grid-column: 1/-1;
+    }
+    .member_img{
+        width: 200px; 
+        height: 200px;
+    }
+    @media only screen and (max-width: 500px) {
+        #investigator_section{
+            grid-column: 2/-1;
+            grid-template-columns: 1fr;
+        }
+        #investigator_info{
+            margin-right: 35px;
+            grid-column: 1/-1;
+            margin-left: 0px;
+        }
+        #investigator_name{
+            font-size: 16px;
+        }
+        #investigator_position{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        #team_section{
+            grid-column: 2/-1;
+        }
+        .team_member{
+            grid-template-columns: 1fr;
+        }
+        .member_info{
+            grid-column: 1;
+        }
+        .member_info p{
+            font-size: 16px;
+        }
+        .member_info h3{
+            font-size: 16px;
+        }
+        .member_img{
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+        #investigator_img{
+            margin-left: 25px;
+        }
+
+    }
 }

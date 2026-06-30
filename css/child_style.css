@@ -126,3 +126,9 @@
         font-size: 18px;
     }
 }
+@media only screen and (max-width:500px){
+    #child_info{
+        grid-column: 2/8;
+        padding:10px;
+    }
+}
