@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/child_style.css">
-    <link rel="stylesheet" href="css/team.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios_new,auto_stories,biotech,business_center,clinical_notes,dentistry,diversity_3,keyboard_arrow_right,redeem" />
+    <link rel="stylesheet" href="css/reading.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios_new,auto_stories,biotech,business_center,clinical_notes,dentistry,diversity_3,keyboard_arrow_down,keyboard_arrow_right,redeem" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Team Page</title>
 </head>
@@ -31,7 +31,7 @@
           <li><a href="https://medresearch.umich.edu/labs-departments" style="text-decoration: underline;">Labs & Departments</a> </li>
           <li><a href="https://medresearch.umich.edu/labs-departments/labs" style="text-decoration: underline;">Labs</a> </li>
           <li><a href="index.html" style="text-decoration: underline;">Oral Health Collaborative</a> </li>
-          <li id="current"><di>Project Team</di></li>
+          <li id="current"><di>Further Readings</di></li>
         </ul>
        </nav>
       </div>
@@ -39,45 +39,32 @@
         <div class="project_nav">
             <a id="home_nav_link" href="index.html"><div id="home_nav"><span id="home_arrow" class="material-symbols-outlined">arrow_back_ios_new</span><h2 id="home_nav_text">Back to Oral Health Collaborative</h2></div></a>
             <ul class="nav_list">
-                <li class="current_page"><a href="team.html">Project Team</a></li>
+                <li><a href="team.html">Project Team</a></li>
                 <li><a >Our Projects</a></li>
                 <li><a >Trauma-Informed Care</a></li>
-                <li><a >Further Readings</a></li>
+                <li class="current_page"><a href="reading.html">Further Readings</a></li>
             </ul>
         </div>
         <div id="main_summary">
-            <h1 id="page_title">Project Team | Oral Health Collaborative</h1>
-            <div id="child_info"><h2>Oral Health Collaborative</h2> <p>Get to know the Oral Health Collaborative Project Team</p></div>
-            <img id ="child_img" src="images/team.jpeg" alt="team builidng puzzle"  style="width:100%"/>
+            <h1 id="page_title">Further Readings | Oral Health Collaborative</h1>
+            <div id="child_info"><h2>Oral Health Collaborative</h2> <p>Browse mental and dental health research and readings.</p></div>
+            <img id ="child_img" src="images/reading.jpeg" alt="team builidng puzzle"  style="width:100%;" />
+        </div>
+
         </div>
       </div>
       <div id="main_content">
-        <h1 id="content_title">Current and Past Oral Health Recovery Working Group Investigators</h1>
-        <div class="member_info" id="lapidos_info">
-          <h2>Adrien Lapidos, PhD, ABPP</h2>
-          <p>Clinical Associate Professor</p>
-          <p>Department of Psychiatry</p>
-          <p>University of Michigan Medical School</p>
+            <div class="reading_sec">
+                <h3>Websites and Resources<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
+           </div>
+           <ul class="reading_list">
+             <li><a href="https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/fhm/spectrum/RightToSmile.pdf">The Right to Smile Consensus Statement </a></li>
+             <li><a href="https://www.nidcr.nih.gov/research/oralhealthinamerica ">Oral Health in America: Advances and Challenges </a></li>
+           </ul>
+            <div class="reading_sec">
+                <h3>Other publications of interest to mental health – oral health integration<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
+           </div>
         </div>
-        <div class="member_info" id="rulli_info">
-          <h2>Danielle Rulli, DHSc, MS, RDH</h2>
-          <p>Associate Professor & Graduate Program Director, Dental Hygiene</p>
-          <p>College of Dentistry</p>
-          <p>The Ohio State University</p>
-        </div>
-        <div class="member_info" id="cullen_info">
-          <h2>Jennifer Cullen, RDH, BSDH, MPH</h2>
-          <p>Clinical Assistant Professor & Director, Division of Dental Hygiene</p>
-          <p>University of Michigan School of Dentistry</p>
-        </div>
-        <div class="member_info" id="nalliah_info">
-          <h2>Romesh Nalliah, DDS, MHCM</h2>
-          <p>University of Michigan School of Dentistry</p>
-
-        </div>
-
-
-      </div>
     </main>
     <footer>
       <a id ="footer_img" href="https://medresearch.umich.edu/"><img src="https://www.uofmhealth.org/themes/custom/outline_frontend/mm-logo-white-text.svg" alt="Michigan Medicine Logo"style="width:100%;height:auto;"/></a>
@@ -169,6 +156,17 @@
       const homeNavLink = document.getElementById('home_nav_link');
       const homeNavText = document.getElementById('home_nav_text');
       const homeNavArrow = document.getElementById('home_arrow');
+      const readingSecs = document.querySelectorAll('.reading_sec')
+      readingSecs.forEach(sec=>sec.addEventListener('mouseenter',()=>{
+            sec.style.backgroundColor ="#0174BC";
+            sec.childNodes[1].style.color="#FFFFFF";
+            sec.childNodes[1].childNodes[1].style.color="#FFFFFF"; 
+      }))
+      readingSecs.forEach(sec=>sec.addEventListener('mouseleave',()=>{
+            sec.style.backgroundColor = "#eaf2f4";
+            sec.childNodes[1].style.color="#000000";
+            sec.childNodes[1].childNodes[1].style.color="#0174BC"; 
+      }))
       homeNavLink.addEventListener('mouseenter',()=>{
         homeNavArrow.style.marginLeft="-10px";
         homeNavArrow.style.color="#131516"
@@ -268,16 +266,16 @@
       let isClicked = false;
       function checkWidth() {
         if (window.innerWidth <= 1000 && !isClicked) {
-            siteNav.innerHTML="<ul><li id='hidden_content' onClick='changeText()'><a href='#'>. . .</a></li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Project Team</di></li></ul>"
+            siteNav.innerHTML="<ul><li id='hidden_content' onClick='changeText()'><a href='#'>. . .</a></li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Further Reading</di></li></ul>"
         } else {
-           siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Project Team</di></li></ul>";
+           siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Further Reading</di></li></ul>";
         }
       }
       window.addEventListener("resize", checkWidth);
       checkWidth();
       function changeText(){
         isClicked = true;
-        siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Project Team</di></li></ul>";
+        siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Further Reading</di></li></ul>";
       }
     </script>
 </body>

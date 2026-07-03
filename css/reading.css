@@ -1,0 +1,44 @@
+#main_content{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    row-gap: 25px;
+    margin-bottom: 50px;
+}
+.reading_sec{
+    grid-column: 2/10;
+    padding:20px;
+    background-color: #eaf2f4;
+    transition:.25s;
+}
+.reading_sec h3{
+    font-size: 25px;
+    margin-left: 20px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.reading_sec span {
+    vertical-align: middle;
+    font-size: 35px;
+    float: right;
+    color:rgb(1, 116, 188);
+}
+.reading_list{
+    grid-column: 3/8;
+    padding-top: 0px;
+    list-style-type: none;
+}
+.reading_list li{
+    margin-top: 30px;
+}
+.reading_list a{
+    text-decoration: none;
+    color: rgb(1, 116, 188);
+    font-size: 20px;
+    transition: .25s;
+}
+.reading_list a:hover{
+    color: #00274C;
+    text-decoration: underline;
+}
