@@ -22,21 +22,33 @@
     vertical-align: middle;
     font-size: 35px;
     float: right;
-    color:rgb(1, 116, 188);
+    color:rgb(47, 101, 167);
 }
 .reading_list{
-    grid-column: 3/8;
+    grid-column: 2/10;
     padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 25px;
     list-style-type: none;
+    display:none;
+}
+.clicked{
+    display:inline;
 }
 .reading_list li{
     margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.reading_list li p{
+    margin-top: 0px;
 }
 .reading_list a{
     text-decoration: none;
-    color: rgb(1, 116, 188);
+    color: rgb(47, 101, 167);
     font-size: 20px;
     transition: .25s;
+    font-weight: 700;
 }
 .reading_list a:hover{
     color: #00274C;

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/child_style.css">
     <link rel="stylesheet" href="css/reading.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios_new,auto_stories,biotech,business_center,clinical_notes,dentistry,diversity_3,keyboard_arrow_down,keyboard_arrow_right,redeem" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios_new,auto_stories,biotech,business_center,clinical_notes,dentistry,diversity_3,keyboard_arrow_down,keyboard_arrow_right,keyboard_arrow_up,redeem" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Team Page</title>
 </head>
@@ -60,10 +60,20 @@
            <ul class="reading_list">
              <li><a href="https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/fhm/spectrum/RightToSmile.pdf">The Right to Smile Consensus Statement </a></li>
              <li><a href="https://www.nidcr.nih.gov/research/oralhealthinamerica ">Oral Health in America: Advances and Challenges </a></li>
+             <li><a href="https://www.thenationalcouncil.org/resources/oral-health-mental-health-substance-use-treatment-toolkit/">Oral Health, Mental Health, and Substance Use Disorder Toolkit</a></li>
            </ul>
             <div class="reading_sec">
-                <h3>Other publications of interest to mental health – oral health integration<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
+                <h3>Publications by Members of our Working Group<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
            </div>
+           <ul class="reading_list">
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/42250159/">Prioritization of oral health among safety-net behavioral health professionals: an explanatory sequential mixed methods study</a>
+                <p>Lapidos A, Cullen J, Flores E, Hagaman B, Hershberger M, Stroud Q, Kim SC, Rulli D. Community Mental Health Journal. In Press</p>
+              </li>
+              <li>
+
+              </li>
+           </ul>
         </div>
     </main>
     <footer>
@@ -166,6 +176,16 @@
             sec.style.backgroundColor = "#eaf2f4";
             sec.childNodes[1].style.color="#000000";
             sec.childNodes[1].childNodes[1].style.color="#0174BC"; 
+      }))
+      readingSecs.forEach(sec=>sec.addEventListener('click',()=>{
+        if(!sec.nextElementSibling.classList.contains("clicked")){
+           sec.nextElementSibling.classList.add("clicked");
+           sec.childNodes[1].childNodes[1].innerHTML="keyboard_arrow_up";
+        }
+        else{
+            sec.nextElementSibling.classList.remove("clicked");
+            sec.childNodes[1].childNodes[1].innerHTML="keyboard_arrow_down"
+        }
       }))
       homeNavLink.addEventListener('mouseenter',()=>{
         homeNavArrow.style.marginLeft="-10px";
