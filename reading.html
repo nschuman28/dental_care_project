@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/child_style.css">
     <link rel="stylesheet" href="css/reading.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios_new,auto_stories,biotech,business_center,clinical_notes,dentistry,diversity_3,keyboard_arrow_down,keyboard_arrow_right,keyboard_arrow_up,redeem" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add,arrow_back_ios_new,auto_stories,biotech,business_center,clinical_notes,dentistry,diversity_3,keyboard_arrow_down,keyboard_arrow_right,keyboard_arrow_up,redeem,remove" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Team Page</title>
 </head>
@@ -54,18 +54,20 @@
         </div>
       </div>
       <div id="main_content">
-            <div class="reading_sec">
+            <h1 id="sec_title">Reading Lists</h1>
+            <h1 id="expand_text">Expand All <span class="material-symbols-outlined">add</span></h1>
+            <div class="reading_sec" id="sec_1">
                 <h3>Websites and Resources<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
            </div>
-           <ul class="reading_list">
+           <ul class="reading_list" id="reading_1">
              <li><a href="https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/fhm/spectrum/RightToSmile.pdf">The Right to Smile Consensus Statement </a></li>
              <li><a href="https://www.nidcr.nih.gov/research/oralhealthinamerica ">Oral Health in America: Advances and Challenges </a></li>
              <li><a href="https://www.thenationalcouncil.org/resources/oral-health-mental-health-substance-use-treatment-toolkit/">Oral Health, Mental Health, and Substance Use Disorder Toolkit</a></li>
            </ul>
-            <div class="reading_sec">
+            <div class="reading_sec" id="sec_2">
                 <h3>Publications by Members of our Working Group<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
            </div>
-           <ul class="reading_list">
+           <ul class="reading_list" id="reading_2">
               <li>
                 <a href="https://pubmed.ncbi.nlm.nih.gov/42250159/">Prioritization of Oral Health Among Safety-Net Behavioral Health professionals: an explanatory sequential mixed methods study</a>
                 <p>Lapidos A, Cullen J, Flores E, Hagaman B, Hershberger M, Stroud Q, Kim SC, Rulli D. Community Mental Health Journal. In Press</p>
@@ -115,10 +117,10 @@
                 <p>Phillips E, Shaefer HL, Aksu MN, Lapidos A. Community Dent Oral Epidemiol.44(5): 426-434, 10/2016. PM27146635</p>
               </li>
            </ul>
-           <div class="reading_sec">
+           <div class="reading_sec" id="sec_3">
                 <h3>Other Publications of Interest to Mental Health – Oral Health Integration<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
            </div>
-           <ul class="reading_list">
+           <ul class="reading_list" id="reading_4">
               <li>
                 <a href="https://pubmed.ncbi.nlm.nih.gov/28299855/">A Systematic Review and Meta‐Analysis of the Association Between Poor Oral Health and Substance Abuse</a>
                 <p>Baghaie, H., Kisely, S., Forbes, M., Sawyer, E., & Siskind, D. J. (2017). Addiction, 112(5), 765-779.</p>
@@ -146,6 +148,50 @@
               <li>
                 <a href="https://pubmed.ncbi.nlm.nih.gov/39137991/">Trauma-Informed Care in Oral Health Care: The role of dental hygienists.</a>
                 <p>Heaton, L. J., & Cheung, H. J. (2024). American Dental Hygienists' Association, 98(4), 50-55.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/30444297/">Dental anxiety in relation to torture experiences and symptoms of post‐traumatic stress disorder</a>
+                <p>Høyvik, A. C., Lie, B., & Willumsen, T. (2019).  European journal of oral sciences, 127(1), 65-71.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/30444297/">Dental anxiety in relation to torture experiences and symptoms of post‐traumatic stress disorder</a>
+                <p>Høyvik, A. C., Lie, B., & Willumsen, T. (2019).  European journal of oral sciences, 127(1), 65-71.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/39056978/">Investigating the Relationship between Oral Health and Severe Mental Illness: Analysis of NHANES 1999-2016</a>
+                <p>Kang, J., Wu, J., Aggarwal, V. R., Shiers, D., Doran, T., & Palmier-Claus, J. (2024). Dentistry Journal, 12(7), 191.</p>
+              </li>
+              <li>
+                <a href="https://journals.sagepub.com/doi/10.1177/0706743716632523">No mental health without oral health</a>
+                <p>Kisely, S. (2016). The Canadian Journal of Psychiatry, 61(5), 277-282.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/25526527/">A systematic review and meta-analysis of the association between poor oral health and severe mental illness</a>
+                <p>Kisely S, Baghaie H, Lalloo R, Siskind D, Johnson NW. Psychosom Med. 2015;77(1):83-92.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/25663839/">Improving clinical practice: what dentists need to know about the association between dental fear and a history of sexual violence victimisation</a>
+                <p>Larijani, H. H., & Guggisberg, M. (2015). International journal of dentistry, 2015(1), 452814.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/40755121/">A Link Work Intervention to Facilitate Dental Visiting in People with Severe Mental Illness: A Two‐Arm, Multi‐Site, Assessor Blind, Randomized Feasibility Trial with Dental Record Linkage</a>
+                <p>Palmier‐Claus, J., Morris, A., French, P., Griffiths, R., Aggarwal, V. R., Berry, K., ... & Burnside, G. (2025). Community Dentistry and Oral Epidemiology, 53(5), 580-86.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/24583888/">Treating patients with traumatic life experiences: providing trauma-informed care</a>
+                <p>Raja, S., Hoersch, M., Rajagopalan, C. F., & Chang, P. (2014). The Journal of the American Dental Association, 145(3), 238-245.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/34886034/">Adverse Childhood Experiences and Oral Health Outcomes in U.S. Children and Adolescents: A Cross-Sectional Study of the 2016 National Survey of Children's Health</a>
+                <p>Simon, A., Cage, J., & Akinkugbe, A. A. (2021). International journal of environmental research and public health, 18(23), 12313.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/22130744/">Physical health disparities and mental illness: the scandal of premature mortality</a>
+                <p>Thornicroft, G. (2011). The British Journal of Psychiatry, 199(6), 441-42.</p>
+              </li>
+              <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/34591113/">Addressing Oral Health of Low-Income Populations-A Call to Action</a>
+                <p>Tiwari T, Franstve-Hawley J. JAMA Netw Open. 2021;4(9):e2125263.</p>
               </li>
            </ul>
         </div>
@@ -260,6 +306,20 @@
             sec.nextElementSibling.classList.remove("clicked");
             sec.childNodes[1].childNodes[1].innerHTML="keyboard_arrow_down"
         }
+        let expandCount =0;
+        readingSecs.forEach((sec)=>{
+            if(sec.nextElementSibling.classList.contains('clicked')){
+              expandCount+=1; 
+            }
+        })
+        if (expandCount===3){
+          isExpanded = true;
+          expandText.innerHTML="Collapse All <span class='material-symbols-outlined'>remove</span>"
+        }
+        else{
+          isExpanded =false;
+          expandText.innerHTML="Expand All <span class='material-symbols-outlined'>add</span>"
+        }
       }))
       homeNavLink.addEventListener('mouseenter',()=>{
         homeNavArrow.style.marginLeft="-10px";
@@ -355,6 +415,27 @@
       })
       const copyright_year = `© Copyright 1995-${Date().slice(11,15)} Regents of the University of Michigan`;
       copyrightText.innerHTML = copyright_year;
+      let isExpanded = false;
+      const expandText = document.getElementById('expand_text');
+      expandText.addEventListener('click',()=>{
+        if(!isExpanded){
+          expandText.innerHTML="Collapse All <span class='material-symbols-outlined'>remove</span>";
+          isExpanded = true; 
+           readingSecs.forEach((sec)=>{
+            sec.nextElementSibling.classList.add("clicked");
+            sec.childNodes[1].childNodes[1].innerHTML="keyboard_arrow_up";
+           })
+        }
+        else{
+          expandText.innerHTML="Expand All <span class='material-symbols-outlined'>add</span>";
+          isExpanded = false;
+          readingSecs.forEach((sec)=>{
+            sec.nextElementSibling.classList.remove("clicked");
+            sec.childNodes[1].childNodes[1].innerHTML="keyboard_arrow_down";
+           }) 
+        }
+      })
+
 
       const siteNav = document.getElementById('site_nav')
       let isClicked = false;
@@ -362,14 +443,14 @@
         if (window.innerWidth <= 1000 && !isClicked) {
             siteNav.innerHTML="<ul><li id='hidden_content' onClick='changeText()'><a href='#'>. . .</a></li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Further Reading</di></li></ul>"
         } else {
-           siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Further Reading</di></li></ul>";
+           siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Further Readings</di></li></ul>";
         }
       }
       window.addEventListener("resize", checkWidth);
       checkWidth();
       function changeText(){
         isClicked = true;
-        siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Further Reading</di></li></ul>";
+        siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Further Readings</di></li></ul>";
       }
     </script>
 </body>
