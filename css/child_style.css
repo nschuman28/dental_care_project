@@ -48,22 +48,32 @@
 .current_page{
     background-color: #2f65a7;
 }
-.current_page a{
-    color: white;
-    display: block;
-}
+
 .nav_list li a{
     margin-left: 10px;
     display: block;
     transition: .25s;
 }
+
 .nav_list li a:hover{
     text-decoration: underline;
-    color: #2f65a7;
-
+    color: #2f65a7 !important;
 }
-.current_page a:hover{
+.nav_list li a:focus{
     text-decoration: underline;
+    color: #2f65a7 !important;
+}
+.nav_list li a:visited{
+    color:black;
+}
+.current_page a:visited{
+    color: white !important;
+    display: block;
+}
+.nav_list li.current_page a:hover{
+    color: white !important;
+}
+.nav_list li.current_page a:focus{
     color: white !important;
 }
 #main_summary{

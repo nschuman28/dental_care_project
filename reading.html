@@ -40,8 +40,8 @@
             <a id="home_nav_link" href="index.html"><div id="home_nav"><span id="home_arrow" class="material-symbols-outlined">arrow_back_ios_new</span><h2 id="home_nav_text">Back to Oral Health Collaborative</h2></div></a>
             <ul class="nav_list">
                 <li><a href="team.html">Project Team</a></li>
-                <li><a >Our Projects</a></li>
-                <li><a >Trauma-Informed Care</a></li>
+                <li><a href="#">Our Projects</a></li>
+                <li><a href="#">Trauma-Informed Care</a></li>
                 <li class="current_page"><a href="reading.html">Further Readings</a></li>
             </ul>
         </div>
@@ -55,8 +55,8 @@
       </div>
       <div id="main_content">
             <h1 id="sec_title">Reading Lists</h1>
-            <h1 id="expand_text">Expand All <span class="material-symbols-outlined">add</span></h1>
-            <div class="reading_sec" id="sec_1">
+            <h1 tabindex="0" id="expand_text">Expand All <span class="material-symbols-outlined">add</span></h1>
+            <div tabindex="0" class="reading_sec" id="sec_1">
                 <h3>Websites and Resources<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
            </div>
            <ul class="reading_list" id="reading_1">
@@ -64,7 +64,7 @@
              <li><a href="https://www.nidcr.nih.gov/research/oralhealthinamerica ">Oral Health in America: Advances and Challenges </a></li>
              <li><a href="https://www.thenationalcouncil.org/resources/oral-health-mental-health-substance-use-treatment-toolkit/">Oral Health, Mental Health, and Substance Use Disorder Toolkit</a></li>
            </ul>
-            <div class="reading_sec" id="sec_2">
+            <div tabindex="0" class="reading_sec" id="sec_2">
                 <h3>Publications by Members of our Working Group<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
            </div>
            <ul class="reading_list" id="reading_2">
@@ -117,7 +117,7 @@
                 <p>Phillips E, Shaefer HL, Aksu MN, Lapidos A. Community Dent Oral Epidemiol.44(5): 426-434, 10/2016. PM27146635</p>
               </li>
            </ul>
-           <div class="reading_sec" id="sec_3">
+           <div tabindex="0" class="reading_sec" id="sec_3">
                 <h3>Other Publications of Interest to Mental Health – Oral Health Integration<span class="material-symbols-outlined">keyboard_arrow_down</span></h3>
            </div>
            <ul class="reading_list" id="reading_4">
@@ -243,9 +243,9 @@
        </ul>
        <div class="social_media"><a href="https://www.facebook.com/MichiganMedicine/?ref=page_internal"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/umichmedicine/"><i class="fa-brands fa-instagram"></i></a><a href="https://www.linkedin.com/company/university-of-michigan-medical-school"><i class="fa-brands fa-linkedin"></i></a><a href="https://twitter.com/umichmedicine"><i class="fa-brands fa-x-twitter"></i></a></div>
       </div>
-      <div class="last_links" id="donation_link"><a href="https://www.michiganmedicine.org/giving/areas-support"><span id="donation_icon"class="material-symbols-outlined">redeem</span><p>Your gift changes lives. It’s never been easier to make an impact.</p><h3 id="gift_text">Make a Gift<span class="material-symbols-outlined" id="gift_arrow">keyboard_arrow_right</span></h3></a></div>
-      <div class="last_links" id="career_link"><a href="https://www.michiganmedicine.org/careers-michigan-medicine"><span id="career_icon" class="material-symbols-outlined">business_center</span><p>Accelerate your career. Advance world health.</p><h3 id="career_text">Careers at Michigan Medicine<span class="material-symbols-outlined" id="career_arrow">keyboard_arrow_right</span></h3></a></div>
-      <div class="last_links" id="harrassment_link"><a href="https://www.uofmhealth.org/contact-us/compliments-concerns"><h2 id="harrassment_text">Report Sexual Misconduct, Discrimination and Harassment</h2></a></div>
+      <div  id="donation_link"><a href="https://www.michiganmedicine.org/giving/areas-support"><span id="donation_icon"class="material-symbols-outlined">redeem</span><p>Your gift changes lives. It’s never been easier to make an impact.</p><h3 class="middle_links" id="gift_text">Make a Gift<span class="material-symbols-outlined" id="gift_arrow">keyboard_arrow_right</span></h3></a></div>
+      <div  id="career_link"><a href="https://www.michiganmedicine.org/careers-michigan-medicine"><span id="career_icon" class="material-symbols-outlined">business_center</span><p>Accelerate your career. Advance world health.</p><h3 class="middle_links" id="career_text">Careers at Michigan Medicine<span class="material-symbols-outlined" id="career_arrow">keyboard_arrow_right</span></h3></a></div>
+      <div id="harrassment_link"><a href="https://www.uofmhealth.org/contact-us/compliments-concerns"><h2 id="harrassment_text">Report Sexual Misconduct, Discrimination and Harassment</h2></a></div>
       <div class="last_links" id="accessibility_link"><a href="https://www.michiganmedicine.org/accessibility-statement"><h3 id="accessibility_text" class="bottom_links">Accessibility Statement<span class="material-symbols-outlined" id="accessibility_arrow">keyboard_arrow_right</span></h3></a></div>
       <div class="last_links" id="communication_link"><a href="https://www.michiganmedicine.org/managing-communication-preferences"><h3 id="communication_text" class="bottom_links">Communication Preferences<span class="material-symbols-outlined" id="communication_arrow">keyboard_arrow_right</span></h3></a></div>
       <div class="last_links" id="disclaimer_link"><a href="https://www.michiganmedicine.org/disclaimer"><h3 id="disclaimer_text" class="bottom_links">Disclaimer<span class="material-symbols-outlined" id="disclaimer_arrow">keyboard_arrow_right</span></h3></a></div>
@@ -258,35 +258,55 @@
       <p id="copyright_text"></p>
     </footer>
     <script>
-      const giftArrow = document.getElementById('gift_arrow');
-      const giftText = document.getElementById('gift_text');
-      const careerArrow = document.getElementById('career_arrow')
-      const careerText = document.getElementById('career_text');
       const harrassmentLink = document.getElementById('harrassment_link');
       const harassmentText = document.getElementById('harrassment_text');
-      const accessibiliyText = document.getElementById('accessibility_text');
-      const accessibilityArrow = document.getElementById('accessibility_arrow');
-      const communicationText = document.getElementById('communication_text'); 
-      const communicationArrow = document.getElementById('communication_arrow');
-      const disclaimerText = document.getElementById('disclaimer_text'); 
-      const disclaimerArrow = document.getElementById('disclaimer_arrow');
-      const internetText = document.getElementById('internet_text');
-      const internetArrow = document.getElementById('internet_arrow');
-      const patientText = document.getElementById('patient_text');
-      const patientArrow = document.getElementById('patient_arrow');
-      const discriminationText = document.getElementById('discrimination_text');
-      const discriminationArrow = document.getElementById('discrimination_arrow');
-      const departmentText = document.getElementById('department_text');
-      const departmentArrow = document.getElementById('department_arrow');
-      const healthText = document.getElementById('health_text');
-      const healthArrow = document.getElementById('health_arrow');
-      const financeText = document.getElementById('finance_text');
-      const financeArrow = document.getElementById('finance_arrow');
       const copyrightText = document.getElementById('copyright_text');
       const homeNavLink = document.getElementById('home_nav_link');
       const homeNavText = document.getElementById('home_nav_text');
       const homeNavArrow = document.getElementById('home_arrow');
-      const readingSecs = document.querySelectorAll('.reading_sec')
+      const readingSecs = document.querySelectorAll('.reading_sec');
+      const bottomLinks=document.querySelectorAll('.bottom_links');
+      const middleLinks = document.querySelectorAll('.middle_links');
+      middleLinks.forEach(link=>link.addEventListener('mouseenter',()=>{
+        link.childNodes[1].style.paddingLeft="10px"
+      }))
+      middleLinks.forEach(link=>link.addEventListener('mouseleave',()=>{
+        link.childNodes[1].style.paddingLeft="1px"
+      }))
+      bottomLinks.forEach(link=>link.addEventListener('mouseenter',()=>{
+          link.childNodes[1].style.paddingLeft="5px";
+      }))
+      bottomLinks.forEach(link=>link.addEventListener('mouseleave',()=>{
+          link.childNodes[1].style.paddingLeft="0px";
+      }))
+      middleLinks.forEach(link => {
+       const anchor = link.closest('a');
+       anchor.addEventListener('focus', () => {
+        link.childNodes[1].style.paddingLeft = "10px";
+       });
+       anchor.addEventListener('blur', () => {
+        link.childNodes[1].style.paddingLeft = "1px";
+       });
+      });
+      bottomLinks.forEach(link => {
+       const anchor = link.closest('a');
+       anchor.addEventListener('focus', () => {
+        link.childNodes[1].style.paddingLeft = "5px";
+       });
+       anchor.addEventListener('blur', () => {
+        link.childNodes[1].style.paddingLeft = "0px";
+       });
+      });
+      readingSecs.forEach(sec=>sec.addEventListener('focus',()=>{
+            sec.style.backgroundColor ="#0174BC";
+            sec.childNodes[1].style.color="#FFFFFF";
+            sec.childNodes[1].childNodes[1].style.color="#FFFFFF"; 
+      }))
+      readingSecs.forEach(sec=>sec.addEventListener('blur',()=>{
+            sec.style.backgroundColor = "#eaf2f4";
+            sec.childNodes[1].style.color="#000000";
+            sec.childNodes[1].childNodes[1].style.color="#0174BC";
+      }))
       readingSecs.forEach(sec=>sec.addEventListener('mouseenter',()=>{
             sec.style.backgroundColor ="#0174BC";
             sec.childNodes[1].style.color="#FFFFFF";
@@ -333,17 +353,18 @@
         homeNavText.style.color="#2F65A7"
         homeNavText.style.textDecoration="none"
       })
-      giftText.addEventListener('mouseenter',()=>{
-        giftArrow.style.paddingLeft ="10px";
+      homeNavLink.addEventListener('focus',()=>{
+        homeNavLink.style.outlineColor="rgb(66, 153, 225);"
+        homeNavArrow.style.marginLeft="-10px";
+        homeNavArrow.style.color="#131516"
+        homeNavText.style.color="#131516"
+        homeNavText.style.textDecoration="underline";
       })
-      giftText.addEventListener('mouseleave',()=>{
-         giftArrow.style.paddingLeft = "1px";
-      })
-      careerText.addEventListener('mouseenter',()=>{
-        careerArrow.style.paddingLeft ="10px";
-      })
-      careerText.addEventListener('mouseleave',()=>{
-         careerArrow.style.paddingLeft = "1px";
+      homeNavLink.addEventListener('blur',()=>{
+        homeNavArrow.style.marginLeft="0px";
+        homeNavArrow.style.color="#2F65A7"
+        homeNavText.style.color="#2F65A7"
+        homeNavText.style.textDecoration="none"
       })
       harrassmentLink.addEventListener('mouseenter',()=>{
         harassmentText.style.color="white"
@@ -353,65 +374,26 @@
         harassmentText.style.color="#0174BC"
         harassmentText.style.textDecoration="none"
       })
-      careerText.addEventListener('mouseleave',()=>{
-         careerArrow.style.paddingLeft = "1px";
+      harrassmentLink.addEventListener('focusin',()=>{
+        console.log('hello')
+        harassmentText.style.color="white"
+        harassmentText.style.textDecoration="underline"
       })
-      careerText.addEventListener('mouseenter',()=>{
-        careerArrow.style.paddingLeft ="10px";
+      harrassmentLink.addEventListener('focusout',()=>{
+        harassmentText.style.color="#0174BC"
+        harassmentText.style.textDecoration="none"
       })
-      accessibiliyText.addEventListener('mouseenter',()=>{
-        accessibilityArrow.style.paddingLeft = "5px";
+      document.addEventListener("keydown", (event) => {
+        if(document.activeElement === expandText && event.key === "Enter"){
+          expandText.click();
+        }
       })
-       accessibiliyText.addEventListener('mouseleave',()=>{
-        accessibilityArrow.style.paddingLeft = "0px";
-      })
-      communicationText.addEventListener('mouseenter',()=>{
-        communicationArrow.style.paddingLeft = "5px";
-      })
-      communicationText.addEventListener('mouseleave',()=>{
-        communicationArrow.style.paddingLeft = "0px";
-      })
-      internetText.addEventListener('mouseenter',()=>{
-        internetArrow.style.paddingLeft = "5px";
-      })
-      internetText.addEventListener('mouseleave',()=>{
-        internetArrow.style.paddingLeft = "0px";
-      })
-      disclaimerText.addEventListener('mouseenter',()=>{
-        disclaimerArrow.style.paddingLeft = "5px";
-      })
-      disclaimerText.addEventListener('mouseleave',()=>{
-        disclaimerArrow.style.paddingLeft = "0px";
-      })
-      departmentText.addEventListener('mouseenter',()=>{
-        departmentArrow.style.paddingLeft = "5px";
-      })
-      departmentText.addEventListener('mouseleave',()=>{
-        departmentArrow.style.paddingLeft = "0px";
-      })
-      patientText.addEventListener('mouseenter',()=>{
-        patientArrow.style.paddingLeft = "5px";
-      })
-      patientText.addEventListener('mouseleave',()=>{
-        patientArrow.style.paddingLeft = "0px";
-      })
-      discriminationText.addEventListener('mouseenter',()=>{
-        discriminationArrow.style.paddingLeft = "5px";
-      })
-      discriminationText.addEventListener('mouseleave',()=>{
-        discriminationArrow.style.paddingLeft = "0px";
-      })
-      healthText.addEventListener('mouseenter',()=>{
-        healthArrow.style.paddingLeft = "5px";
-      })
-      healthText.addEventListener('mouseleave',()=>{
-        healthArrow.style.paddingLeft = "0px";
-      })
-      financeText.addEventListener('mouseenter',()=>{
-        financeArrow.style.paddingLeft = "5px";
-      })
-      financeText.addEventListener('mouseleave',()=>{
-        financeArrow.style.paddingLeft = "0px";
+      document.addEventListener("keydown", (event) => {
+        readingSecs.forEach((sec)=>{
+          if(document.activeElement === sec && event.key === "Enter"){
+            sec.click();
+          }
+        })
       })
       const copyright_year = `© Copyright 1995-${Date().slice(11,15)} Regents of the University of Michigan`;
       copyrightText.innerHTML = copyright_year;
@@ -435,7 +417,6 @@
            }) 
         }
       })
-
 
       const siteNav = document.getElementById('site_nav')
       let isClicked = false;
