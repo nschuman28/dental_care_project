@@ -41,13 +41,13 @@
             <ul class="nav_list">
                 <li><a href="team.html">Project Team</a></li>
                 <li><a href="#">Our Projects</a></li>
-                <li><a href="#">Trauma-Informed Care</a></li>
+                <li><a href="trauma.html">Trauma-Informed Care</a></li>
                 <li class="current_page"><a href="reading.html">Further Readings</a></li>
             </ul>
         </div>
         <div id="main_summary">
             <h1 id="page_title">Further Readings | Oral Health Collaborative</h1>
-            <div id="child_info"><h2>Oral Health Collaborative</h2> <p>Browse mental and dental health research and readings.</p></div>
+            <div id="child_info"><h2>Project Bibliography</h2> <p>Browse mental and dental health research and readings.</p></div>
             <img id ="child_img" src="images/reading.jpeg" alt="team builidng puzzle"  style="width:100%;" />
         </div>
 
@@ -354,13 +354,17 @@
         homeNavText.style.textDecoration="none"
       })
       homeNavLink.addEventListener('focus',()=>{
-        homeNavLink.style.outlineColor="rgb(66, 153, 225);"
+        homeNavText.style.outlineColor="#4299E1"; 
+        homeNavText.style.outlineOffset= "0px"; 
+        homeNavText.style.outlineStyle= "solid";
+        homeNavText.style.outlineWidth= "2.66667px";
         homeNavArrow.style.marginLeft="-10px";
         homeNavArrow.style.color="#131516"
         homeNavText.style.color="#131516"
         homeNavText.style.textDecoration="underline";
       })
       homeNavLink.addEventListener('blur',()=>{
+        homeNavText.style.outlineStyle= "none";
         homeNavArrow.style.marginLeft="0px";
         homeNavArrow.style.color="#2F65A7"
         homeNavText.style.color="#2F65A7"
@@ -375,7 +379,6 @@
         harassmentText.style.textDecoration="none"
       })
       harrassmentLink.addEventListener('focusin',()=>{
-        console.log('hello')
         harassmentText.style.color="white"
         harassmentText.style.textDecoration="underline"
       })

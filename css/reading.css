@@ -25,11 +25,16 @@
     vertical-align: middle;
     margin-bottom: 2px;
 }
-#expand_text:focus{
+#expand_text:focus-visible{
     color:#00274C;
+    outline-color: rgb(66, 153, 225);
+    outline-offset: 0px; 
+    outline-style: solid;
+    outline-width: 2.66667px;
 }
 #expand_text:hover{
    color:#00274C;
+   cursor: pointer;
 }
 #sec_1{
     grid-row:2;
@@ -39,6 +44,9 @@
     padding:20px;
     background-color: #eaf2f4;
     transition:.25s;
+}
+.reading_sec:hover{
+    cursor: pointer;
 }
 .reading_sec h3{
     font-size: 25px;

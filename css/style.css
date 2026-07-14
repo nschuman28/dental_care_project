@@ -25,7 +25,6 @@ div:focus{
   outline-style: solid;
   outline-width: 2.66667px;
 }
-h
 li:focus{
    outline-color: rgb(66, 153, 225);
    outline-offset:4.66667px;

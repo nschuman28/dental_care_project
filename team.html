@@ -40,15 +40,15 @@
             <a id="home_nav_link" href="index.html"><div id="home_nav"><span id="home_arrow" class="material-symbols-outlined">arrow_back_ios_new</span><h2 id="home_nav_text">Back to Oral Health Collaborative</h2></div></a>
             <ul class="nav_list">
                 <li class="current_page"><a href="team.html">Project Team</a></li>
-                <li><a >Our Projects</a></li>
-                <li><a >Trauma-Informed Care</a></li>
+                <li><a href="#">Our Projects</a></li>
+                <li><a href="trauma.html">Trauma-Informed Care</a></li>
                 <li><a href="reading.html">Further Readings</a></li>
             </ul>
         </div>
         <div id="main_summary">
             <h1 id="page_title">Project Team | Oral Health Collaborative</h1>
-            <div id="child_info"><h2>Oral Health Collaborative</h2> <p>Get to know the Oral Health Collaborative Project Team</p></div>
-            <img id ="child_img" src="images/team.jpeg" alt="team builidng puzzle"  style="width:100%"/>
+            <div id="child_info"><h2>Research Team</h2> <p>Get to know the Oral Health Collaborative Project Team</p></div>
+            <img id ="child_img" src="images/team_hero.png" alt="The Rachel Upjohn Building."  style="width:100%"/>
         </div>
       </div>
       <div id="main_content">
@@ -161,6 +161,24 @@
       bottomLinks.forEach(link=>link.addEventListener('mouseleave',()=>{
           link.childNodes[1].style.paddingLeft="0px";
       }))
+      middleLinks.forEach(link => {
+       const anchor = link.closest('a');
+       anchor.addEventListener('focus', () => {
+        link.childNodes[1].style.paddingLeft = "10px";
+       });
+       anchor.addEventListener('blur', () => {
+        link.childNodes[1].style.paddingLeft = "1px";
+       });
+      });
+      bottomLinks.forEach(link => {
+       const anchor = link.closest('a');
+       anchor.addEventListener('focus', () => {
+        link.childNodes[1].style.paddingLeft = "5px";
+       });
+       anchor.addEventListener('blur', () => {
+        link.childNodes[1].style.paddingLeft = "0px";
+       });
+      });
       homeNavLink.addEventListener('mouseenter',()=>{
         homeNavArrow.style.marginLeft="-10px";
         homeNavArrow.style.color="#131516"
@@ -173,11 +191,36 @@
         homeNavText.style.color="#2F65A7"
         homeNavText.style.textDecoration="none"
       })
+       homeNavLink.addEventListener('focus',()=>{
+        homeNavText.style.outlineColor="#4299E1"; 
+        homeNavText.style.outlineOffset= "0px"; 
+        homeNavText.style.outlineStyle= "solid";
+        homeNavText.style.outlineWidth= "2.66667px";
+        homeNavArrow.style.marginLeft="-10px";
+        homeNavArrow.style.color="#131516"
+        homeNavText.style.color="#131516"
+        homeNavText.style.textDecoration="underline";
+      })
+      homeNavLink.addEventListener('blur',()=>{
+        homeNavText.style.outlineStyle= "none";
+        homeNavArrow.style.marginLeft="0px";
+        homeNavArrow.style.color="#2F65A7"
+        homeNavText.style.color="#2F65A7"
+        homeNavText.style.textDecoration="none"
+      })
       harrassmentLink.addEventListener('mouseenter',()=>{
         harassmentText.style.color="white"
         harassmentText.style.textDecoration="underline"
       })
       harrassmentLink.addEventListener('mouseleave',()=>{
+        harassmentText.style.color="#0174BC"
+        harassmentText.style.textDecoration="none"
+      })
+      harrassmentLink.addEventListener('focusin',()=>{
+        harassmentText.style.color="white"
+        harassmentText.style.textDecoration="underline"
+      })
+      harrassmentLink.addEventListener('focusout',()=>{
         harassmentText.style.color="#0174BC"
         harassmentText.style.textDecoration="none"
       })
