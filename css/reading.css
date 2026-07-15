@@ -20,6 +20,7 @@
     vertical-align: bottom;
     width: fit-content;
     padding: 10px;
+    transition:.15s;
 }
 #expand_text span{
     vertical-align: middle;

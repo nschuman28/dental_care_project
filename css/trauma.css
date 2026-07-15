@@ -1,0 +1,29 @@
+#child_info h2{
+    font-size: 25px;
+}
+#child_info p{
+    font-size: 17px;
+}
+#child_info{
+    padding: 25px;
+}
+#main_content{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+#page_subheading{
+    font-size: 35px;
+    grid-row: 1;
+    grid-column: 3/-1;
+}
+#subheading_text{
+    grid-row:2;
+    margin-top: 10px;
+    font-size: 20px; 
+    line-height: 33px; 
+    grid-column: 3/10;
+}

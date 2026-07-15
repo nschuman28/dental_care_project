@@ -53,6 +53,10 @@
     margin-left: 10px;
     display: block;
     transition: .25s;
+    color: black;
+}
+.current_page a{
+    color: white !important; 
 }
 
 .nav_list li a:hover{
@@ -93,6 +97,7 @@
     grid-column: 1/-1;
     grid-row: 2/5;
     height: 110%;
+    max-height: 550px;
 }
 #child_info{
     z-index: 1;

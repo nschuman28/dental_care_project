@@ -53,10 +53,11 @@
       </div>
       <div id="main_content">
        <h1 id="page_subheading">Why a trauma-informed continuum?</h1>
-       <p id="subheading_text"></p>
-
-
-
+       <p id="subheading_text">Many people with a history of psychological trauma, mental illness, or substance use disorder do not make it to the dental clinic until their oral health problems have progressed and their teeth cannot be restored. 
+        A trauma-informed continuum of care, particularly one that recognizes the significance of oral health within mental health recovery, starts with healthcare providers in primary care, mental health, and substance use treatment settings. 
+        The trauma-informed continuum is then maintained when dental offices provide clinically excellent care that considers how trauma responses and mental health concerns can affect access and experience of care. Our team has developed a series of 
+        resources that are designed to give patients and healthcare providers a better understanding of oral health in a trauma-informed continuum of dental care.
+       </p>
       </div>
     </main>
     <footer>
@@ -211,16 +212,16 @@
       let isClicked = false;
       function checkWidth() {
         if (window.innerWidth <= 1000 && !isClicked) {
-            siteNav.innerHTML="<ul><li id='hidden_content' onClick='changeText()'><a href='#'>. . .</a></li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Project Team</di></li></ul>"
+            siteNav.innerHTML="<ul><li id='hidden_content' onClick='changeText()'><a href='#'>. . .</a></li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Trauma-Informed Care</di></li></ul>"
         } else {
-           siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Project Team</di></li></ul>";
+           siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Trauma-Informed Care</di></li></ul>";
         }
       }
       window.addEventListener("resize", checkWidth);
       checkWidth();
       function changeText(){
         isClicked = true;
-        siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Project Team</di></li></ul>";
+        siteNav.innerHTML="<ul><li><a href='https://www.uofmhealth.org/'' style='text-decoration: underline;''>Home</a> </li><li><a href='https://medresearch.umich.edu/labs-departments' style='text-decoration: underline;''>Labs & Departments</a> </li> <li><a href='https://medresearch.umich.edu/labs-departments/labs' style='text-decoration: underline;''>Labs</a> </li><li><a href='index.html' style='text-decoration: underline;''>Oral Health Collaborative</a> </li><li id='current'><di>Trauma-Informed Care</di></li></ul>";
       }
     </script>
 </body>
