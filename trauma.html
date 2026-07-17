@@ -58,6 +58,36 @@
         The trauma-informed continuum is then maintained when dental offices provide clinically excellent care that considers how trauma responses and mental health concerns can affect access and experience of care. Our team has developed a series of 
         resources that are designed to give patients and healthcare providers a better understanding of oral health in a trauma-informed continuum of dental care.
        </p>
+       <div class="resource_sec" id="resource_1">
+        <img src="images/dental_patients.png" alt="Patient talks with dentist"/>
+        <h2>Dental Patients</h2>
+        <p>Click below to access resources designed for patients in dental settings</p>
+        <h3 class="resource_link"><a href="#">Dental Patient Resources<span class="material-symbols-outlined" id="finance_arrow">keyboard_arrow_right</span></a></h3>
+       </div>
+       <div class="resource_sec" id="resource_2">
+        <img src="images/other_patients.jpg" alt="Patient talks with non-dental provider"/>
+        <h2>Non-Dental Patients</h2>
+        <p>Click below to access resources designed for patients in other settings, such as primary care, mental health, and substance use treatment settings</p>
+        <h3 class="resource_link"><a href="#">Non-Dental Patient Resources<span class="material-symbols-outlined" id="finance_arrow">keyboard_arrow_right</span></a></h3>
+       </div>
+       <div class="resource_sec" id="resource_3">
+        <img src="images/dentist_photo.jpg" alt="Dentist stands smiling"/>
+        <h2>Dental Providers</h2>
+        <p>Click below to access resources designed for dental providers</p>
+        <h3 class="resource_link"><a href="#">Dental Provider Resources<span class="material-symbols-outlined" id="finance_arrow">keyboard_arrow_right</span></a></h3>
+       </div>
+       <div class="resource_sec" id="resource_4">
+        <img src="images/doctor_photo.jpg" alt="Doctor stands smiling"/>
+        <h2>Non-Dental Providers</h2>
+        <p>Click below to access resources designed for providers in other settings, such as primary care, mental health, and substance use treatment settings</p>
+        <h3 class="resource_link"><a href="#">Non-Dental Provider Resources<span class="material-symbols-outlined" id="finance_arrow">keyboard_arrow_right</span></a></h3>
+       </div>
+       <div class="resource_sec" id="resource_5">
+        <img src="images/form_photo.jpeg" alt="Doctor stands smiling"/>
+        <h2>Dental Support Plan</h2>
+        <p>Click here to access a worksheet, “My Dental Support Plan”, which patients in non-dental healthcare settings or community settings can use to prepare for their dental visit</p>
+        <h3 class="resource_link"><a href="#">My Dental Support Plan<span class="material-symbols-outlined" id="finance_arrow">keyboard_arrow_right</span></a></h3>
+       </div>
       </div>
     </main>
     <footer>
@@ -128,8 +158,15 @@
       const homeNavLink = document.getElementById('home_nav_link');
       const homeNavText = document.getElementById('home_nav_text');
       const homeNavArrow = document.getElementById('home_arrow');
+      const resourceLinks = document.querySelectorAll('.resource_link');
       const bottomLinks=document.querySelectorAll('.bottom_links');
       const middleLinks = document.querySelectorAll('.middle_links');
+      resourceLinks.forEach(link=>link.addEventListener('mouseenter',()=>{
+        link.childNodes[0].childNodes[1].style.paddingLeft="10px"
+      }))
+      resourceLinks.forEach(link=>link.addEventListener('mouseleave',()=>{
+        link.childNodes[0].childNodes[1].style.paddingLeft="0px"
+      }))
       middleLinks.forEach(link=>link.addEventListener('mouseenter',()=>{
         link.childNodes[1].style.paddingLeft="10px"
       }))

@@ -97,7 +97,7 @@
     grid-column: 1/-1;
     grid-row: 2/5;
     height: 110%;
-    max-height: 550px;
+    max-height: 525px;
 }
 #child_info{
     z-index: 1;

@@ -10,20 +10,115 @@
 #main_content{
     display: grid;
     margin-top: 50px;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(2, min-content) 1fr 1fr;
     row-gap: 50px;
     margin-bottom: 50px;
+    column-gap:10px;
 }
 #page_subheading{
-    font-size: 35px;
+    font-size: 40px;
     grid-row: 1;
-    grid-column: 3/-1;
+    grid-column: 2/-1;
 }
 #subheading_text{
     grid-row:2;
     margin-top: 10px;
-    font-size: 20px; 
+    font-size: 21px; 
     line-height: 33px; 
-    grid-column: 3/10;
+    grid-column: 2/11;
+}
+.resource_sec{
+    margin-bottom: 50px;
+    text-align: left;
+}
+.resource_sec h2{
+    font-size: 36px;
+    font-weight: 700; 
+    margin-top: 20px;
+    margin-left:30px;
+    font-family: Roboto, "sans-serif"
+}
+.resource_sec p{
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 20px;
+    line-height: 30px;
+}
+#resource_1{
+    grid-row: 3;
+    grid-column: 2/5;
+}
+.resource_sec img{
+    width: 98%;
+    height: 45%;
+    
+}
+.resource_sec h3 a{
+    color:rgb(47, 101, 167);
+    font-size: 18px;
+    margin-left: 30px;
+    transition: .15s;
+    text-decoration: none;
+}
+.resource_sec h3 span{
+    font-size: 27px;
+    margin-left: -5px;
+}
+.resource_sec h3 a:hover{
+    color:rgb(0, 39, 76);
+    text-decoration: underline;
+}
+#resource_2{
+    grid-row: 3;
+    grid-column: 5/8;
+}
+#resource_3{
+    grid-row: 3;
+    grid-column: 8/11;
+}
+#resource_4{
+    grid-row: 4;
+    grid-column: 2/7;
+}
+#resource_4 img{
+    width:92%;
+    height: 45%;
+}
+#resource_4 p{
+    margin-right: 100px;
+}
+#resource_5{
+    grid-row: 4;
+    grid-column: 7/11;
+    margin-left: -30px;
+}
+#resource_5 img{
+    width:100%;
+    height: 45%;
+}
+@media only screen and (max-width:1000px){
+    #main_content{
+        grid-template-rows: repeat(2, min-content) 1fr 1fr 1fr 1fr 1fr;
+    }
+    #resource_1{
+      grid-row: 3;
+      grid-column: 1/-1;
+   }
+   #resource_2{
+     grid-row: 4;
+     grid-column: 1/-1;
+   }
+   #resource_3{
+     grid-row: 5;
+     grid-column: 1/-1;
+   }
+   #resource_4{
+     grid-row: 6;
+     grid-column: 1/-1;
+   }
+   #resource_5{
+     grid-row: 7;
+     grid-column: 1/-1;
+   }
 }
