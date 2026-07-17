@@ -167,6 +167,17 @@
       resourceLinks.forEach(link=>link.addEventListener('mouseleave',()=>{
         link.childNodes[0].childNodes[1].style.paddingLeft="0px"
       }))
+      resourceLinks.forEach(link=>link.addEventListener('focusin',()=>{
+        link.childNodes[0].childNodes[1].style.paddingLeft="10px";
+        link.childNodes[0].childNodes[1].style.color="#00274C";
+        link.childNodes[0].childNodes[1].parentElement.style.color="#00274C";
+        
+      }))
+      resourceLinks.forEach(link=>link.addEventListener('focusout',()=>{
+        link.childNodes[0].childNodes[1].style.paddingLeft="0px";
+        link.childNodes[0].childNodes[1].style.color="#2F65A7";
+        link.childNodes[0].childNodes[1].parentElement.style.color="#2F65A7";
+      }))
       middleLinks.forEach(link=>link.addEventListener('mouseenter',()=>{
         link.childNodes[1].style.paddingLeft="10px"
       }))

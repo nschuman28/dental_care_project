@@ -37,7 +37,9 @@ li:focus{
    outline-style: solid;
    outline-width: 2.66667px;
 }
-
+#header_img{
+    display: inline-block;
+}
 #accessibility_link a,
 #communication_link a,
 #disclaimer_link a,

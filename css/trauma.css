@@ -11,9 +11,9 @@
     display: grid;
     margin-top: 50px;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(2, min-content) 1fr 1fr;
+    grid-template-rows: repeat(2, min-content) 1fr min-content;
     row-gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     column-gap:10px;
 }
 #page_subheading{
@@ -60,6 +60,7 @@
     margin-left: 30px;
     transition: .15s;
     text-decoration: none;
+    display: inline-block;
 }
 .resource_sec h3 span{
     font-size: 27px;
@@ -83,7 +84,6 @@
 }
 #resource_4 img{
     width:92%;
-    height: 45%;
 }
 #resource_4 p{
     margin-right: 100px;
@@ -95,30 +95,101 @@
 }
 #resource_5 img{
     width:100%;
-    height: 45%;
 }
 @media only screen and (max-width:1000px){
+    #child_info h2{
+    font-size: 22px;
+    }
+    #child_info p{
+      font-size: 16px;
+    }
+    #child_info{
+        grid-column: 3/8;
+    }
+    #page_subheading{
+    font-size: 40px;
+    }
+    #subheading_text{
+        font-size: 16px;
+        grid-column: 2/17;
+        line-height: 27px;
+    }
     #main_content{
-        grid-template-rows: repeat(2, min-content) 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 15px;
+        grid-template-rows: repeat(7, min-content);
+        grid-template-columns: repeat(17, 1fr);
+        row-gap: 2px;
+    }
+    .resource_sec{
+       margin-bottom:0px;
+    }
+    .resource_sec h2{
+        font-size: 27px;
+    }
+    .resource_sec p{
+        font-size: 18px;
+    }
+    .resource_sec h3 a{
+        font-size: 16px;
     }
     #resource_1{
       grid-row: 3;
-      grid-column: 1/-1;
+      grid-column: 2/17;
    }
    #resource_2{
      grid-row: 4;
-     grid-column: 1/-1;
+     grid-column: 2/17;
    }
    #resource_3{
      grid-row: 5;
-     grid-column: 1/-1;
+     grid-column: 2/17;
    }
    #resource_4{
      grid-row: 6;
-     grid-column: 1/-1;
+     grid-column: 2/17;
    }
    #resource_5{
      grid-row: 7;
-     grid-column: 1/-1;
+     grid-column: 2/17;
+     margin-left:0px;
    }
+   .resource_sec img{
+    width: 100%;
+    height:55%;
+   }
+   #resource_4 img{
+     width: 100%;
+   }
+   #resource_5 img{
+    width: 100%;
+   }
+}
+@media only screen and (max-width:500px){
+     #child_info{
+        grid-column: 2/8;
+    }
+    #child_info h2{
+    font-size: 18px;
+    line-height: 22px;
+    }
+    #child_info p{
+      font-size: 14px;
+    }
+    #page_subheading{
+     font-size: 32px;
+    }
+    .resource_sec img{
+     height:35%;
+   }
+   .resource_sec h2{
+        font-size: 24px;
+    }
+    .resource_sec p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #resource_4 p{
+    margin-right: 50px;
+}
+
 }
