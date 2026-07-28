@@ -1,16 +1,18 @@
 #main_content{
  display: grid;
- grid-template-columns: repeat(11, 1fr);
+ grid-template-columns: repeat(10, 1fr);
  grid-template-rows: repeat(10, 1fr);
  margin-top: 40px;
- column-gap: 25px;
 }
 #info_1{
     grid-column: 2/6;
-    grid-row: 2/6;
+    grid-row: 2/5;
 }
 .sec_info h1{
     font-size: 50px;
+}
+.sec_info{
+    margin-right: 100px;
 }
 .sec_info p{
     font-size: 18px;
@@ -34,10 +36,11 @@
     text-decoration: underline;
 }
 #img_1{
-    grid-column: 6/11;
-    grid-row: 1/9;
+    grid-column: 6/10;
+    grid-row: 1/7;
 }
 .link_img{
-    width: 100%;
+    width:100%;
     height:100%;
+    object-fit:cover;
 }
