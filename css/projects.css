@@ -1,7 +1,7 @@
 #main_content{
  display: grid;
  grid-template-columns: repeat(10, 1fr);
- grid-template-rows: min-content repeat(17, 1fr);
+ grid-template-rows: min-content repeat(23, 1fr) .5fr;
 }
 .sec_title{
     font-size: 50px;
@@ -73,26 +73,18 @@
     vertical-align: center;
 }
 .video_frame{
-    width: 93%;
-    height: 100%;
-    border:3px solid black;
+    position: relative;
+    border: solid black 1px;
+    margin-bottom: 50px;
 }
+
+
+
 #video_1{
-    grid-row: 15/18;
-    grid-column: 2/6;
+    grid-row: 15/20;
+    grid-column: 2/10;
 }
 #video_2{
-    grid-row:15/18;
-    grid-column: 6/10;
-}
-.video_text{
-    font-size: 20px;
-    color:rgb(94, 106, 110);
-    grid-row: 18;
-}
-#text_1{
-    grid-column: 3/-1;
-}
-#text_2{
-    grid-column: 7/-1;
+    grid-row: 20/25;
+    grid-column: 2/10;
 }
