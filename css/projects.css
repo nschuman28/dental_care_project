@@ -170,6 +170,7 @@
     }
     #title_2{
         grid-row: 4;
+        align-self: center;
     }
     #video_p{
         grid-row:5;
