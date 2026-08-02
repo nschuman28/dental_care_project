@@ -1,7 +1,7 @@
 #main_content{
  display: grid;
  grid-template-columns: repeat(10, 1fr);
- grid-template-rows: min-content repeat(23, 1fr) .5fr;
+ grid-template-rows: min-content repeat(5, 1fr) .5fr repeat(7, 1fr) .5fr repeat(9, 1fr) .5fr;
 }
 .sec_title{
     font-size: 50px;
@@ -14,7 +14,8 @@
 }
 #title_2{
     grid-row: 13;
-    vertical-align: middle;
+    margin: 0px;
+    align-self: flex-end;
 }
 #info_1{
     grid-column: 2/6;
@@ -25,7 +26,7 @@
    grid-row:9/12;
 }
 .sec_info h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 .sec_info{
     margin-right: 100px;
@@ -74,7 +75,7 @@
     grid-column: 2/9;
     grid-row:14/15;
     margin:0px;
-    vertical-align: center;
+    align-self: flex-end;
 }
 .video_frame{
     position: relative;
@@ -83,16 +84,16 @@
 }
 
 #video_1{
-    grid-row: 15/20;
+    grid-row: 16/20;
     grid-column: 2/10;
 }
 #video_2{
     grid-row: 20/25;
     grid-column: 2/10;
 }
-@media only screen and (max-width:900px){
+@media only screen and (max-width:1000px){
     #main_content{
-        grid-template-rows: min-content repeat(14, 1fr) .5fr;
+        grid-template-rows: min-content repeat(13, 1fr) .5fr;
     }
     .link_img{
         display: none;
@@ -105,9 +106,8 @@
     }
     #info_2{
         grid-column: 2/-1;
-        grid-row: 5/8;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        grid-row: 4/7;
+        margin-top: 100px;
     }
     .sec_info h1{
     font-size: 45px;
@@ -116,18 +116,76 @@
         margin-top:0px;
     }
     #title_2{
-        grid-row: 8;
+        grid-row: 7;
+        align-self: auto;
+        margin-top: 30px;
     }
     #video_p{
-        grid-row:9/10;
+        grid-row:8/9;
+    }
+    .video_frame{
+        margin-top: 25px;
     }
     #video_1{
-       grid-row: 10/13;
+       grid-row: 9/12;
        grid-column: 2/-1;
     }
     #video_2{
-        grid-row: 13/16; 
+        grid-row: 12/15; 
         grid-column: 2/-1; 
+    }
+}
+@media only screen and (max-width:500px){
+    #main_content{
+        grid-template-rows: min-content repeat(2, 1fr) .5fr .5fr repeat(2, 1fr);
+    }
+    .sec_title{
+        font-size: 40px;
+    }
+    .sec_info{
+        margin-right: 0px;
+    }
+    .sec_info h1{
+        font-size: 32px;
+    }
+    .sec_info p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #info_1{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        grid-row: 2;
+        grid-column: 2/10;
+    }
+    #info_2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        grid-row: 3;
+        grid-column: 2/10;
+    }
+    .button_link{
+        font-size: 16px;
+        width: 40%;
+    }
+    #title_2{
+        grid-row: 4;
+    }
+    #video_p{
+        grid-row:5;
+        align-self: auto;
+        grid-column: 2/-1;
+    }
+    .video_frame{
+        height: 75%;
+    }
+    #video_1{
+        grid-row: 6;
+        grid-column: 2/10;
+    }
+    #video_2{
+       grid-row: 7;
+       grid-column: 2/10;
     }
 
 }
