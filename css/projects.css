@@ -84,11 +84,11 @@
 }
 
 #video_1{
-    grid-row: 16/20;
+    grid-row: 16/21;
     grid-column: 2/10;
 }
 #video_2{
-    grid-row: 20/25;
+    grid-row: 21/26;
     grid-column: 2/10;
 }
 @media only screen and (max-width:1000px){
@@ -128,11 +128,11 @@
     }
     #video_1{
        grid-row: 9/12;
-       grid-column: 2/-1;
+       grid-column: 2/10;
     }
     #video_2{
         grid-row: 12/15; 
-        grid-column: 2/-1; 
+        grid-column: 2/10; 
     }
 }
 @media only screen and (max-width:500px){
